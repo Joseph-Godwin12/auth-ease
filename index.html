@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+     <head>
+	 <title>Sign In Radiant Life</title>
+     </head>
+     <style>
+       *{
+	 box-sizing: border-box;
+}
+	
+	 body{
+	  font-family: sans-serif;
+          font-weight: 300;
+          background: #181818;
+          color: #fff;
+          overflow: hidden;
+}
+	#wrapper{
+          display: flex;
+	  flex-direction: row:;
+
+
+}
+
+	#left{
+	   display: flex;
+	   flex-direction: column; 
+	   flex: 1;
+	   align-items: center;
+ 	   justify-content: center;
+	   height: 100vh;
+
+}
+
+	#right{
+	  flex: 1;
+	  
+
+}
+
+	/* Sign In*/
+	#signin{
+	   display: flex;
+	   flex-direction: column;
+           justify-content: center
+	   align-items: center;
+           width: 80%;
+  	   padding-bottom: 1rem;
+
+}
+
+	#signin form{
+	   width: 80%;
+	   padding-bottom: 3rem;
+}
+	#signin.header{
+	   margin-bottom: 8vh;
+}
+	#signin.header h1{
+	   width: 300px;
+}
+	#signin label{
+	   font-size: 13px;
+	   line-height: 32px;
+	   font-weight: 500;
+}
+	#signin .input-text{
+	   margin-bottom: 1.3rem;
+	   width: 100%;
+	   border-radius: 2px;
+	   background: #181818;
+	   border: 1px solid #4b4b4b;
+	   color: #ccc;
+	   padding: 10px 20px;
+	   line-height: 10px;
+}	
+	#signin .pri-btn{
+	   width: 100%;
+
+	#signin .sec-btn,
+	.or,
+	.links{
+	   width: 60%;
+}
+	
+	 #signin .links a {
+	   display: block;
+	   color: #fff;
+	   text-decoration: none;
+	   margin-botton: 1rem;
+	   text-align: center;
+	   font-size: 10px;
+
+
+}
+
+	#signin .or {
+	   display: flex;
+	   flex-direction: row;
+	   margin-bottom: 20px;
+	   align-items: center;   
+
+
+
+}
+	#signin .or .bad {
+	   flex: auto;
+	   border: none;
+	   height: 1px;
+	   background: #aaa;
+
+
+
+
+}	 
+
+	
+	/* Showcase */
+	#showcase {
+	   display: flex;
+	   justify-content: center;
+	   align-items: center;
+	   background: #f63232;
+	   text-align: center;
+
+
+}
+	#main-footer .more-links {
+	   display: block;
+	   color: royalblue;
+	   text=decoration: none;
+	   
+
+}
+
+
+
+	
+
+
+}
+	
+	/* Button */
+	.pri-btn{
+	   padding: 10px 22px;
+	   height: 34px;
+	   display: block;
+	   border: 0;
+	   border-radius: 2px;
+	   font-weight: 480;
+	   background: #f96816;
+	   color: #fff;
+	   text-decoration: none;
+	   cursor: pointer;
+	   text-align: center;
+	   transition: background-color 0.5s;
+}
+	.pri-btn:hover {
+	   background-color: #ff7b39;
+}
+		
+x
+	.sec-btn{
+	   padding: 10px 22px;
+	   height: 34px;
+	   display: block;
+	   border: 1px solid #f4f4f4;
+	   border-radius: 2px;
+	   font-weight: 500;
+	   background: none;
+	   color: #fff;
+	   text-decoration: none;
+	   cursor: pointer;
+	   text-align: center;
+	   transition: all 0.5s;
+	   
+
+}
+
+	.sec-btn:hover {
+	   border-color: #ff7b39;
+	   color: #ff7b39;
+}
+	
+	/* Media Queries */
+	@media(min-width: 1000px) {
+	 #left{
+	   flex: 4;
+}
+	#right{
+	   flex: 6;
+}
+}
+
+	@media(max-width: 620px) {
+	 body{
+	   overflow: auto;
+}
+	 #right {
+	   display: none;
+	   
+}
+	#left {
+	   justify-content: start;
+	   margin-top: 2vh;
+
+}
+
+
+
+}	
+</style>
+<body>
+	<div id="wrapper">
+		<div id="left">
+        	<div id="signin">
+
+          	<div class="header">
+            		<h1>Radiant LIfe</h1>
+          	</div>
+
+		<form>
+	    		<div>
+	       			<label>Email Or Username</label>
+               			<input text="text" class="input-text">
+        		</div>
+
+            		<div>
+	       			<label>Password</label>
+               			<input type="password" class="input-text">
+        		</div>
+
+            		<button type="submit" class="pri-btn">Sign in</button>
+      		</form>
+
+      		<div class="links">
+           		<a href="#" style="color: white;">Forget Password</a>
+           		<a href="#">Sign in with Facebook</a>
+       		</div>
+
+       		<div class="or">
+			<hr class="bad">
+			<span>OR</span>
+			<hr class="bad">
+   	  	</div> 
+ 
+          	<a href="https://chrome.com" class="sec-btn">Create an account</a>
+     </div>
+
+         <footer id="main-footer">
+	<p>Copyright &copy; 2020 Radiant Life</p>
+	<div class="more-links">
+	    <a href="#">terms of use</a>
+            <a href="#">privacy policy</a>
+	</div>
+     	</footer>
+  
+    </div>
+
+<div id="right">
+	<div id="showcase">
+	   <div class="showcase-body">
+	    <h1 class="showcase-text">The next <strong>generation</strong></h1>
+	     <a href="#" class="sec-btn">Join Us Today!</a>
+
+         </div>
+     </div>
+
+ </div>
+
+</div>
+</body>
+</html>
+        
